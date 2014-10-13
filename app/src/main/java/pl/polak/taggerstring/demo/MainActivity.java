@@ -1,0 +1,41 @@
+package pl.polak.taggerstring.demo;
+
+import android.support.v7.app.ActionBarActivity;
+import android.os.Bundle;
+import android.widget.TextView;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import pl.polak.taggerstring.TaggerString;
+import pl.polak.taggerstring.TaggerStyleType;
+
+
+public class MainActivity extends ActionBarActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        TextView tvExampleOne = (TextView) findViewById(R.id.tv_example_one);
+
+        TaggerString taggerString = TaggerString.from(getString(R.string.example_one));
+        taggerString.with("user_name", "Marcin", TaggerStyleType.BOLD);
+        taggerString.with("developer_role", "Android Software Developer", TaggerStyleType.UNDERLINE);
+
+        tvExampleOne.setText(taggerString.formatCustom());
+
+        Map<String, Object> map = new HashMap<String, Object>();
+        map.put("user_name", "Marcin");
+        map.put("developer_role", "Android Software Developer");
+
+        TaggerString taggerStringMap = TaggerString.from(getString(R.string.example_one));
+        taggerStringMap.with(map);
+
+        TextView tvExampleMap = (TextView) findViewById(R.id.tv_example_map);
+        tvExampleMap.setText(taggerStringMap.format());
+
+
+    }
+}
