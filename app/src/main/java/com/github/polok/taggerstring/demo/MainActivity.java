@@ -1,4 +1,4 @@
-package pl.polak.taggerstring.demo;
+package com.github.polok.taggerstring.demo;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -6,9 +6,6 @@ import android.widget.TextView;
 
 import java.util.HashMap;
 import java.util.Map;
-
-import pl.polak.taggerstring.TaggerString;
-import pl.polak.taggerstring.TaggerStyleType;
 
 
 public class MainActivity extends ActionBarActivity {

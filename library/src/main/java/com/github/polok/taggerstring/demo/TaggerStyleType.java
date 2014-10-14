@@ -1,4 +1,4 @@
-package pl.polak.taggerstring;
+package com.github.polok.taggerstring.demo;
 
 public enum TaggerStyleType {
 

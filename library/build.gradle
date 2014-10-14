@@ -5,7 +5,7 @@ android {
     buildToolsVersion "20.0.0"
 
     defaultConfig {
-        applicationId "pl.polak.taggerstring"
+        applicationId "com.github.polok.taggerstring"
         minSdkVersion 7
         targetSdkVersion 20
         versionCode 1
