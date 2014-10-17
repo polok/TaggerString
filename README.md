@@ -38,3 +38,15 @@ taggerString.with("user_age", 27, TaggerStyleType.UNDERLINE);
 tvExampleOne.setText(taggerString.formatCustom());
 ```
 Please note thatin this case method *formatCustom()* returns *Spanned* object.
+
+Usage
+----------
+
+If you are using gradle please add below:
+
+dependencies {
+    compile 'com.github.polok.taggerstring:library:1.0.0'
+}
+
+
+
