@@ -44,9 +44,10 @@ Usage
 
 If you are using gradle please add below:
 
+```
 dependencies {
     compile 'com.github.polok.taggerstring:library:1.0.0'
 }
-
+```
 
 
