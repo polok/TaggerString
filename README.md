@@ -18,7 +18,7 @@ And in source code:
 
 So far so good but maybe this could be a little bit more readable ? Yes, it can be (at least in my opinion) - **TaggerString**.
 
-Above example will look like :
+In source code above example will look like :
 
 ```
   TaggerString taggerString = TaggerString.from(getString(R.string.user_description_string));
@@ -27,6 +27,14 @@ Above example will look like :
 
   tvExampleOne.setText(taggerString.format());
 ```
+
+And our string resource looks
+
+```
+<string name="example_one">My name is {user_name} and I am a {developer_role}</string>
+```
+
+
 
 If you want to use **bold** (TaggerStyleType.BOLD), *italic* (TaggerStyleType.ITALIC) or underscore (TaggerStyleType.UNDERLINE), please go ahead:
 
