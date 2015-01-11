@@ -48,6 +48,13 @@ tvExampleOne.setText(taggerString.formatCustom());
 ```
 Please note that in this case method *formatCustom()* returns *Spanned* object.
 
+*** Multiple formatting (since version 1.1.0)
+If you want to apply few tags for one string go ahead and do it:
+
+```java
+taggerString.with("developer_role", "Android Software Developer", TaggerStyleType.UNDERLINE, TaggerStyleType.BOLD, TaggerStyleType.ITALIC);
+```
+
 Usage
 ----------
 
@@ -55,7 +62,7 @@ If you are using gradle please add below:
 
 ```xml
 dependencies {
-    compile 'com.github.polok.taggerstring:library:1.0.0'
+    compile 'com.github.polok.taggerstring:library:1.1.0'
 }
 ```
 
@@ -63,7 +70,7 @@ License
 ----------
 
 ```
-Copyright 2014 Marcin Polak
+Copyright 2015 Marcin Polak
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
