@@ -48,7 +48,7 @@ tvExampleOne.setText(taggerString.formatCustom());
 ```
 Please note that in this case method *formatCustom()* returns *Spanned* object.
 
-*** Multiple formatting (since version 1.1.0)
+##### Multiple formatting (since version 1.1.0)
 If you want to apply few tags for one string go ahead and do it:
 
 ```java
