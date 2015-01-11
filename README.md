@@ -62,7 +62,16 @@ If you are using gradle please add below:
 
 ```xml
 dependencies {
-    compile 'com.github.polok.taggerstring:library:1.1.0'
+    compile 'com.github.polok.taggerstring:library:1.0.0'
+}
+```
+
+####
+Since version 1.1.0 the artefactId was changed from library to taggerstring:
+
+```xml
+dependencies {
+    compile 'com.github.polok.taggerstring:taggerstring:1.1.0'
 }
 ```
 
