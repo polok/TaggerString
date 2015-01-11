@@ -33,6 +33,11 @@ public class MainActivity extends ActionBarActivity {
         TextView tvExampleMap = (TextView) findViewById(R.id.tv_example_map);
         tvExampleMap.setText(taggerStringMap.format());
 
+        TaggerString taggerStringMultipleStyle = TaggerString.from(getString(R.string.example_one));
+        taggerStringMultipleStyle.with("user_name", "Marcin", TaggerStyleType.BOLD, TaggerStyleType.ITALIC);
+        taggerStringMultipleStyle.with("developer_role", "Android Software Developer", TaggerStyleType.UNDERLINE, TaggerStyleType.BOLD, TaggerStyleType.ITALIC);
 
+        TextView tvExampleMultipleStyle = (TextView) findViewById(R.id.tv_example_multiple_style);
+        tvExampleMultipleStyle.setText(taggerStringMultipleStyle.formatCustom());
     }
 }

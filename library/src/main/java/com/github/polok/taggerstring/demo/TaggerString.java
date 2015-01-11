@@ -56,12 +56,24 @@ public class TaggerString {
         return this;
     }
 
-
     public TaggerString with(String key, Object value, TaggerStyleType taggerStyleType) {
         StringBuilder builder = new StringBuilder(PLACEHOLDER_BRACKET_OPEN);
         builder.append(key);
         builder.append(PLACEHOLDER_BRACKET_CLOSE);
         tags.put(builder.toString(), taggerStyleType.getTagStart() + value + taggerStyleType.getTagEnd());
+        return this;
+    }
+
+    public TaggerString with(String key, Object value, TaggerStyleType... taggerStyleTypes) {
+        StringBuilder builder = new StringBuilder(PLACEHOLDER_BRACKET_OPEN);
+        builder.append(key);
+        builder.append(PLACEHOLDER_BRACKET_CLOSE);
+
+        for(TaggerStyleType type : taggerStyleTypes) {
+            value = type.getTagStart() + value + type.getTagEnd();
+        }
+
+        tags.put(builder.toString(), value);
         return this;
     }
 
