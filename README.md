@@ -3,7 +3,7 @@ TaggerString
 
 TaggerString is very light library which allows to build dynamic string resource in much more readable way.
 
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-TaggerString-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/1048)
+[![License](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0) [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-TaggerString-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/1048)
 
 I guess that every Android developer has seen or added similar piece of code in *string.xml* file:
 
